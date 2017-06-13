@@ -28,7 +28,7 @@ describe('Utils', () => {
 
     describe('#asyncSquare(num, callback)', () => {
         it('Should square a number Asynchronously', (done) => {
-            utils.asuncSquare(7, (res) => {
+            utils.asyncSquare(7, (res) => {
                 expect(res).toBeA('number').toBe(49);
                 done();
             });
