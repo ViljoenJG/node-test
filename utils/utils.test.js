@@ -26,6 +26,15 @@ describe('Utils', () => {
         });
     });
 
+    describe('#asyncSquare(num, callback)', () => {
+        it('Should square a number Asynchronously', (done) => {
+            utils.asuncSquare(7, (res) => {
+                expect(res).toBeA('number').toBe(49);
+                done();
+            });
+        });
+    });
+
     describe('#setName(user, fullName)', () => {
         it('Should verify that first and last names are set for a user', () => {
             let user = {age: 30};
